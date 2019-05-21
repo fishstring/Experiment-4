@@ -1,0 +1,101 @@
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+	int a,b,c, choice;
+
+	
+	cout << "MENU :\n";
+	cout << "1. Add\n";
+	cout << "2. subtract\n";
+	cout << "3. Multiply\n";
+	cout << "4. Divide\n";
+	cout << "5. Modulus\n\n";
+	
+	
+	cout << "enter your choice\n";
+	cin >> choice;
+	
+	switch(choice)
+	{
+	
+	case 1:
+		
+		cout << "enter two numbers \n";
+		cin >> a;
+		cout << "\n";
+		cin >> b;
+		cout << "\n";
+		c = a + b;
+		cout << "\n";
+		cout << " The result is " << c;
+		break;
+	
+	
+	case 2:
+		
+		cout << "enter two numbers \n";
+		cin >> a;
+		cout << "\n";
+		cin >> b;
+		cout << "\n";
+		c = a - b;
+		cout << "\n";
+		cout << " The result is " << c;		
+		break;
+		
+	case 3:
+		
+		cout << "enter two numbers \n";
+		cin >> a;
+		cout << "\n";
+		cin >> b;
+		cout << "\n";
+		c = a * b;
+		cout << "\n";
+		cout << " The result is " << c;
+		break;		
+	case 4:
+		
+		cout << "enter two numbers \n";
+		cin >> a;
+		cout << "\n";
+		cin >> b;
+		cout << "\n";
+		c = a / b;
+		cout << "\n";
+		cout << " The result is " << c;	
+
+		break;		
+	case 5:
+		
+		cout << "enter two numbers \n";
+		cin >> a;
+		cout << "\n";
+		cin >> b;
+		cout << "\n";
+		c = a % b;
+		cout << "\n";
+		cout << " The result is " << c;		
+		break;		
+}
+
+char leave = 'N';
+do
+{
+	cout << " Continue ? \n ";
+    cin >> leave;
+
+} while ((leave == 'Y') || (leave == 'y'));
+
+
+	
+	
+	
+	getch();
+	return 0;
+}
